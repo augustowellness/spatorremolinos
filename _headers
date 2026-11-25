@@ -1,0 +1,17 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Solo las cabeceras que no bloquean nada de la web: el navegador no
+# "adivina" tipos de archivo, no se filtra la URL completa a otras webs al
+# pulsar un enlace, y se fuerza HTTPS durante un año.
+#
+# A propósito NO se incluye Content-Security-Policy: en la web hermana
+# (masajemalaga.es) bloqueó recursos legítimos durante varias rondas. Si en
+# algún momento se añade, hay que listar antes todo lo que carga la web
+# (calendario de spareservas.netlify.app, Google Analytics, Microsoft
+# Clarity, píxel de Meta, Google Fonts, WhatsApp, hoja de ofertas...).
+#
+# Este archivo solo lo lee Netlify (y hostings compatibles); en otro
+# hosting se ignora sin causar ningún problema.

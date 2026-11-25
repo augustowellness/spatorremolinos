@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spatorremolinos.com/sitemap.xml
